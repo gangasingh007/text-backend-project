@@ -15,6 +15,7 @@ app.get("/", (req,res)=>{
     fs.readdir(`./files`,(err,files)=>{
         res.render("index", {files : files});
     })
+
 })
 
 app.get("/file/:filename",(req,res)=>{
