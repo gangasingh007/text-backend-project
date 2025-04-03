@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Backend Project</title>
+    <link rel="stylesheet" href="/stylesheets/style.css">
+</head>
+<body>
+    <div class="project-title">
+        Text File Manager
+    </div>
+
+    <form action="/create" method="post" class="input-form">
+        <input class="text-title" type="text" name="title" placeholder="Enter the title.." required>
+        <textarea class="text-content" name="content" placeholder="Enter the contents of the file here.." required></textarea>
+        <input class="submit-btn" type="submit" value="Submit">
+    </form>
+
+    <div class="container">
+        <% if (files.length === 0) { %>
+            <h4 class="msg">No data To Show</h4>
+        <% } else { %>
+            <% files.forEach(val => { %>
+                <div class="file-card">
+                    <h4 class="header"><%= val %></h4>
+                    <a href="/file/<%= val %>">Read More</a>
+                </div>
+            <% }) %>
+        <% } %>
+    </div>
+</body>
+</html>

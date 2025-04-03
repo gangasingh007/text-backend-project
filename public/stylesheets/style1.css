@@ -1,0 +1,36 @@
+*{
+    padding: 0;
+    margin: 0;
+    background-color: black;
+}
+
+.home-link{
+    text-decoration: none;
+    margin:10px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    color: royalblue;
+    font-size: 1.24rem ;
+}
+
+.file-title{
+    color: white;
+    margin: 30px;
+    margin-right: 10px ;
+    background-color: rgba(10, 9, 9, 0.496);
+    width: 300px;
+    padding: 10px;
+    border-radius: 7px ;
+}
+
+.file-content{
+    color: white;
+    border: 1 px solid white;
+    margin: 20px;
+    background-color: rgba(10, 9, 9, 0.496);
+    width: 500px;
+    padding: 10px;
+    border-radius: 7px;
+
+}
