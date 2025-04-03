@@ -10,3 +10,11 @@
    - Dynamic Routing
    - Fs Module
    - Ejs Files to write Dynamic HTML code
+
+
+#### To run this project run the following commands
+   - npm init -y
+   - npm install express
+   - npm install ejs
+   - node index.js
+#### Once the server is running go to your local browser and go to url(http://localhost:3000/)
